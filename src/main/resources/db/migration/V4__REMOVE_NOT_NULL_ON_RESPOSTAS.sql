@@ -1,0 +1,2 @@
+ALTER TABLE topico
+ALTER COLUMN respostas DROP NOT NULL;
