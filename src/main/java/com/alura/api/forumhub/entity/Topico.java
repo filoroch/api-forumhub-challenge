@@ -1,11 +1,9 @@
 package com.alura.api.forumhub.entity;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import org.apache.catalina.User;
+
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -20,7 +18,9 @@ public class Topico {
     private Integer id;
     private String titulo;
     private String mensagem;
-    private LocalDate data_criacao;
+
+    @Column(name = "data_criacao")
+    private LocalDate dataCriacao;
 
     @Enumerated(value = EnumType.STRING)
     private Status status;
@@ -60,8 +60,8 @@ public class Topico {
         return mensagem;
     }
 
-    public LocalDate getData_criacao() {
-        return data_criacao;
+    public LocalDate getDataCriacao() {
+        return dataCriacao;
     }
 
     public Status getStatus() {

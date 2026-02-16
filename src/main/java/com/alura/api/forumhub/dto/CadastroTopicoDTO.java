@@ -1,8 +1,5 @@
 package com.alura.api.forumhub.dto;
 
-import com.alura.api.forumhub.entity.Curso;
-import com.alura.api.forumhub.entity.Usuario;
-
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
