@@ -36,18 +36,6 @@ public class Topico {
     @OneToMany(mappedBy = "topico")
     private Set<Resposta> respostas;
 
-//    public Topico(Integer id, String titulo, String mensagem, LocalDate data_criacao, Status status, Usuario autor, Curso curso, Set<Resposta> respostas) {
-//        this.id = id;
-//        this.titulo = titulo;
-//        this.mensagem = mensagem;
-//        this.data_criacao = data_criacao;
-//        this.status = status;
-//        this.autor = autor;
-//        this.curso = curso;
-//        this.respostas = respostas;
-//    }
-
-
     public Integer getId() {
         return id;
     }
@@ -78,5 +66,21 @@ public class Topico {
 
     public Set<Resposta> getRespostas() {
         return respostas;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+
+    public void setAutor(Usuario autor) {
+        this.autor = autor;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 }
