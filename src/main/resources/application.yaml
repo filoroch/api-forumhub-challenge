@@ -3,10 +3,18 @@ spring:
     name: api-forumhub-challenge
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${url}:${port}/${db_name}
-    username: ${db_username}
-    password: ${db_password}
+    url: jdbc:postgresql://${url:localhost}:${port:5432}/${db_name:forunhub}
+    username: ${db_username:postgres}
+    password: ${db_password:postgres}
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: true
+scalar:
+  enabled: true
+  url: v3/api-docs
+  page: Forunhub challenge
+  slug: v1
+  page-title: "Forunhub API"
+springdoc:
+  paths-to-exclude: /scalar/**
