@@ -17,4 +17,11 @@ Justificativas especificas para algumas ações tomandas nesse projeto
 
 > Usecases tambem permite que reaproveitemos uma logica X sem repetir o codigo, mas centralizando em um só lugar, apesar de isso tambem abrir uma margem para um acomplamento
 </details>
+</details>
+<details>
+  <summary><b>Scalar no lugar do Swagger?</b></summary>
+  <br />
+
+  > Apesar do Swagger ser uma otima plataforma, Scalar atraves do OpenAPi, permite um design limpo e personalizado, permitindo inclusive, testes iterativos diretamente no ambiente da API
+</details>
 
